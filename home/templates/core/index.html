@@ -1,24 +1,150 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="theme-color" content="#080b12">
+    <meta name="description" content="Conheça o portfólio de Pedro Gabriel, desenvolvedor em formação.">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Pedro Gabriel | Port-Fólio</title>
+    <title>Pedro Gabriel | Portfólio</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            Pedro Gabriel
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Mais</a>
-            <a href="#">Projetos</a>
+    <header class="site-header">
+        <a class="logo" href="#inicio" aria-label="Pedro Gabriel, início">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span>Pedro<span class="logo-dot">.</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
         </nav>
+
+        <a href="https://github.com/pedrodev-233"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="github"/></a>
+        <a href="https://www.instagram.com/pedro.gx0/"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+
     </header>
-    
+
+    <main>
+        <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> DESENVOLVEDOR EM FORMAÇÃO</p>
+                <h1 id="hero-title">Olá, eu sou<br>Pedro <span>Gabriel.</span></h1>
+                <p class="hero-description">
+                    Desenvolvo soluções com Python e Django, transformando ideias em sistemas funcionais. Este é o meu espaço para compartilhar projetos, evoluir como desenvolvedor e construir tecnologia que resolve problemas reais.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#sobre">Um pouco sobre mim <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-line" aria-hidden="true"></span>
+                    <span>Construindo meu próximo capítulo, uma linha de código por vez.</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="image-frame">
+                    <img src="{% static 'img/pedro.png' %}" alt="Pedro Gabriel em frente ao computador">
+                    <div class="image-caption">
+                        <span class="caption-label">POR TRÁS DO CÓDIGO</span>
+                        <span class="caption-name">Prazer, Pedro.</span>
+                    </div>
+                </div>
+                <div class="floating-card" aria-label="Sempre aprendendo">
+                    <span class="floating-icon" aria-hidden="true">✳</span>
+                    <span><strong>Sempre aprendendo</strong><small>e criando coisas novas</small></span>
+                </div>
+                <span class="visual-index" aria-hidden="true">01 / 03</span>
+            </div>
+            <span class="hero-orb hero-orb-one" aria-hidden="true"></span>
+            <span class="hero-orb hero-orb-two" aria-hidden="true"></span>
+        </section>
+
+        <section class="about section-wrap" id="sobre" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="eyebrow">01 — SOBRE MIM</p>
+                <h2 id="about-title">Aprendendo hoje.<br><span>Criando o amanhã.</span></h2>
+            </div>
+            <div class="about-content">
+                <p>
+                    Tenho 13 anos e estou dando os primeiros passos no desenvolvimento web e explorando
+                    como a tecnologia pode transformar boas ideias em algo real.
+                </p>
+                <p>
+                    Cada projeto é uma oportunidade de aprender algo novo, experimentar
+                    e evoluir. Este portfólio também faz parte dessa jornada.
+                </p>
+                <div class="skills" aria-label="Tecnologias em aprendizado">
+                    <span class="skill-label">NO MEU RADAR</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Pentest Basic</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section-wrap" id="projetos" aria-labelledby="projects-title">
+            <div class="projects-heading">
+                <div>
+                    <p class="eyebrow">02 — EM CONSTRUÇÃO</p>
+                    <h2 id="projects-title">Ideias que viram<br><span>projetos.</span></h2>
+                </div>
+                <p class="projects-intro">Cada linha de código é mais um passo na jornada.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card project-card-vendatech">
+                    <div class="project-preview" aria-hidden="true">
+                        <div class="preview-topbar"><span></span><span></span><span></span><b>vendatech</b></div>
+                        <div class="preview-content">
+                            <span class="preview-kicker">TECNOLOGIA &amp; NEGÓCIOS</span>
+                            <span class="preview-title">Venda<br>mais <em>inteligente.</em></span>
+                            <span class="preview-button">VENDATECH <span aria-hidden="true">↗</span></span>
+                        </div>
+                        <span class="preview-symbol" aria-hidden="true">V.</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>01</span><span>PROJETO</span></div>
+                        <h3>Vendatech</h3>
+                        <p>Um projeto digital, unindo tecnologia, negócios e uma presença online marcante.</p>
+                        <div class="project-tags"><span>DESIGN</span><span>WEB</span><span>SAAS</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-burger">
+                    <div class="project-preview" aria-hidden="true">
+                        <div class="preview-topbar"><span></span><span></span><span></span><b>burger</b></div>
+                        <div class="preview-content">
+                            <span class="preview-kicker">SABOR DE VERDADE</span>
+                            <span class="preview-title">Feito pra<br><em>matar a fome.</em></span>
+                            <span class="preview-button">BURGER <span aria-hidden="true">↗</span></span>
+                        </div>
+                        <span class="preview-symbol" aria-hidden="true">B.</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>02</span><span>PROJETO</span></div>
+                        <h3>Burger</h3>
+                        <p>Uma proposta web para uma marca de hambúrguer, com uma apresentação visual saborosa e direta.</p>
+                        <div class="project-tags"><span>DESIGN</span><span>WEB</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="#inicio">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span>pedro<span class="logo-dot">.</span></span>
+        </a>
+        <p>Feito com curiosidade e muitas linhas de código.</p>
+        <a class="back-to-top" href="#inicio">Voltar ao início ↑</a>
+    </footer>
+    <script src="{% static 'js/animations.js' %}" defer></script>
 </body>
 </html>
