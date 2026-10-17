@@ -1,0 +1,47 @@
+:root {
+    --primary: #000000;
+    --secundary: #243ee6;
+    --muted: #10c410;
+    --text: #ffffff;
+    --bg: #808080;
+    --border: 0.1px solid #9c9a9a;
+    --font-primary: 'Inter';
+    --font-tech: monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-primary);
+    background: var(--primary);
+    color: var(--text);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-family: var(--font-tech);
+    font-size: 35px;
+    color: var(--secundary);
+    margin: 15px;
+}
